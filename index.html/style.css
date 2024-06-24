@@ -1,0 +1,924 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Jura";
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #CDC682;
+    overflow-x: hidden; /* Добавлено для устранения горизонтальной прокрутки */
+}
+
+.letters_main {
+    margin-bottom: 2vh; /* Пример: замена 20px на 2vh */
+    max-width: 100%; /* Добавлено для ограничения ширины изображения */
+    height: auto; /* Добавлено для сохранения пропорций изображения */
+}
+
+.image-button{
+    max-width: 100%;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 11.36vh; /* Пример: замена 176px на 11.36vh */
+    gap: 7.95vw; /* Пример: замена 70px на 7.95vw */
+    font-weight: 500; /* Убран лишний "px" */
+    font-size: 2em; /* Пример: замена 32px на 2em */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #917800;
+}
+
+.page1 {
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    width: 100vw;
+}
+
+.name {
+    font-size: 4.44em; /* Пример: замена 128px на 4.44em */
+    font-weight: 100; /* Убран лишний "px" */
+    max-width: 100%; /* Добавлено для ограничения ширины текста */
+    margin-bottom: 10vh; /* Пример: замена 80px на 10vh */
+}
+
+.green {
+    color: #917800;
+}
+
+.green2 {
+    color: #917800;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page2 {
+    display: flex;
+    padding: 30px;
+    width: 100vw;
+    height: 56.25vw;
+    
+}
+
+.star_about_me {
+    position: absolute;
+    margin-top: 22.22vh; /* Пример: замена 200px на 22.22vh */
+    max-width: 100%; /* Добавлено для ограничения ширины изображения */
+    height: auto; /* Добавлено для сохранения пропорций изображения */
+}
+
+.text_block {
+    display: flex;
+    gap: 1.39vw; 
+    flex-direction: column;
+    margin-top: 16vh; 
+    padding: 1.39vw; 
+}
+
+.text_about_me {
+    font-weight: 2.08em; /* Заменено 500px на 2.08em */
+    font-size: 3.2vw; /* Заменено 64px на 3.2vw */
+    max-width: 100%; /* Добавлено для ограничения ширины текста */
+}
+
+.text_about_me2 {
+    font-weight: 1.5em; /* Заменено 300px на 1.5em */
+    font-size: 2.4vw; /* Заменено 48px на 2.4vw */
+    max-width: 100%; /* Добавлено для ограничения ширины текста */
+}
+
+.vector_main{
+    position: absolute;
+    top: 31.25vw; /* Заменено 600px на 31.25vw */
+    left: 0;
+    max-width: 100%; /* или конкретное значение в пикселях */
+    height: auto;
+}
+
+.stars_dekstop_main{
+    position: absolute;
+    top: 25vw; /* Заменено 450px на 25vw */
+    right: 0;
+    max-width: 100%; /* или конкретное значение в пикселях */
+    height: auto;
+}
+
+.vector_about_me{
+    max-width: 100%;
+    position: absolute;
+    left: -1.563vw; /* Заменено -30px на -1.563vw */
+    top: 46.875vw; /* Заменено 850px на 46.875vw */
+}
+
+.content{
+    display: flex;
+    position: relative;
+}
+
+.me{
+    max-width: 100%;
+    width: 41.406vw; /* Заменено 833px на 41.406vw */
+    height: 39.422vw; /* Заменено 799px на 39.422vw */
+    position: absolute;
+    transform: translateX(20%);
+    margin-top: 8.33vh; /* Заменено 100px на 8.33vh */
+}
+
+.page3 {
+    display: flex;
+    padding: 30px;
+    width: 100vw;
+}
+
+.content_3{
+    display: flex;
+    position: relative;
+
+}
+.gr_red{
+    display: flex;
+    margin-top: 2.9vh;
+}
+.icons_left{
+    display: flex;
+    padding: 1.2vh 0;
+    row-gap: 4.1vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line_red{
+    margin-right: 4.6vw;
+    width: 8.15vw; 
+    height: 67.4vh; 
+}
+
+.icon_wrapper {
+    position: relative;
+}
+
+.icon{
+    width: 7.8125vw;
+    height: 7.8125vw;
+    transition: transform 0.5s;
+    transform-origin: center;
+}
+.icon_enlarged {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.25);
+}
+
+.icon_wrapper:hover .icon_enlarged {
+    display: block;
+    
+}
+
+.icon_wrapper:hover .icon {
+    opacity: 0;
+    transition: 0.5s;
+transform: scale(1.25);
+}
+
+.prog{
+    margin-top: 3.7037vh;
+    margin-left: -13.0208vw;
+}
+
+.programming{
+    display: flex;
+    align-items: center;
+    margin-left: -5.2083vw;
+}
+
+.projects{
+    float: right;
+}
+.icons_right_part{
+    display: flex;
+    padding: 1.2vh 0;
+    row-gap: 4.1vh;
+    flex-direction: column;
+    align-items: center;
+}
+.line_prog{
+    margin-right: 2.3438vw;
+    width: 4.5313vw; 
+    height: 55.5556vh;
+}
+
+.right_line {
+    margin-right: 15vw;
+    display: flex;
+    
+}
+
+.icons_right {
+    display: flex;
+    padding: 1.2vh 0;
+    gap: 4.1vh;
+    flex-direction: column;
+}
+
+.yellow_star{
+    position: absolute;
+    width: 8vw;
+    height: 8vw;
+    left: 52.0833vw;
+    animation: swing 2s ease-in-out infinite;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(15deg); /* качаем в одну сторону */
+    }
+    100% {
+        transform: rotate(0deg); /* и возвращаем обратно */
+    }
+}
+
+.pink_star{
+    position: absolute;
+    
+    left: 600px;
+   top: 200px;
+    animation: swing 2s ease-in-out infinite;
+    max-width: 100%;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(15deg); /* качаем в одну сторону */
+    }
+    100% {
+        transform: rotate(0deg); /* и возвращаем обратно */
+    }
+}
+
+
+
+.page5 {
+    padding: 30px;
+    width: 100vw;
+    height: 56.25vw;
+    align-items: center;
+}
+
+.page4 { 
+    padding: 30px;
+    width: 100%;
+    height: 56.25vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.projects_4 { 
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block; /* added */
+}
+.projects { 
+    max-width: 100%;
+    float: right; 
+    width: 494px; 
+    height: 140px; 
+}
+
+.project-item {
+    position: relative;
+    float: left;
+    width: 20%; /* Adjust based on the number of items you have */
+}
+
+.project-img img {
+    max-width: 130%;
+    height: auto;
+}
+
+
+.content_4 { 
+        width: 100%;
+        height: 100%;
+        position: relative;
+} 
+
+.content_5{
+    align-items: center;
+}
+
+
+.contacts{
+    display: flex;
+    align-items: center;
+    row-gap: 65px;
+    column-gap: 100px; 
+}
+
+.contacts_element{
+    row-gap: 65px;
+    column-gap: 45px;
+    display: flex;
+    flex-direction: column;
+}
+
+.iowa{
+    position: relative;
+    left: 20vw;
+}
+.college{
+    position: relative;
+    margin-top: 20vw;
+    right: 30vw;
+}
+
+.skate{
+    position: relative;
+    left: 3vw;
+}
+.ink{
+    position: relative;
+    top: 23vw;
+    right: 15vw;
+}
+
+.poster{
+    position: relative;
+    right: 5vw;
+    top: 5vw;
+}
+
+.back{
+    max-width: 100%;
+}
+.icons {
+    row-gap: 65px;
+    gap: 45px;
+    align-items: center; /* выравниваем элементы по центру */
+    display: flex; /* устанавливаем flex-контейнер */
+}
+
+.txt{
+font-size: 4em;
+color: black;
+}
+
+.txt:hover{
+    color:#917800;
+}
+
+.face{
+    max-width: 100%;
+    position: relative;
+    bottom: 600px;
+    left: 30px;
+    animation: swing 2s ease-in-out infinite;
+}
+@keyframes swing {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(15deg); /* качаем в одну сторону */
+    }
+    100% {
+        transform: rotate(0deg); /* и возвращаем обратно */
+    }
+}
+
+.star_call{
+    max-width: 100%;
+    position: relative;
+    bottom: 250px;
+    left: 170px;
+    animation: swing 2s ease-in-out infinite;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(15deg); /* качаем в одну сторону */
+    }
+    100% {
+        transform: rotate(0deg); /* и возвращаем обратно */
+    }
+}
+
+.images{
+    position: relative;
+    left: 20px;
+}
+
+
+
+@media screen and (max-width: 1850px){
+    .page1, .page2{
+        height: 100vh;
+    }
+
+    .header {
+      gap: 4vw;
+      font-size: 1.5em;
+    }
+
+    .letters_main{
+        max-width: 80%;
+    }
+
+    .name{
+        font-size: 4em;
+    }
+
+    .image-button{
+        max-width: 80%; 
+        max-height: 80%;
+    }
+
+    .vector_main {
+        top: 23vw; 
+        max-width: 17vw;
+  }
+
+  .star_about_me{
+        max-width: 17vw;
+        max-height: 17vw;
+  }
+  .stars_dekstop_main{
+    max-width: 17vw;
+    max-height: 17vw;
+  }
+
+  .about_me{
+    max-width: 40vw;
+    max-height: 40vw;
+}
+
+.star_about_me{
+margin-top: 10vw;
+}
+
+.yellow_star{
+    left: 60vw;
+}
+
+.pink_star{
+    left: 27vw;
+}
+
+.prog{
+    margin-left: -23vw;
+}
+
+.programming{
+    margin-left: -10vw;
+}
+
+.text_block{
+    margin-top: 10vh;
+}
+
+.skate, .iowa, .college, .ink, .poster{
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.skate{
+    top: -15px;
+}
+
+.poster{
+    bottom: 200px;
+    
+}
+
+.ink{
+    bottom: 20px;
+}
+
+.college{
+    bottom: 5px;
+}
+
+.vector_back {
+    margin-left: 0px;
+}
+
+.svyaz{
+    max-width: 60%;
+}
+
+.icon_call{
+    width: 8vw;
+}
+
+.contacts{
+    column-gap: 0px;
+}
+}
+
+@media screen and (max-width: 1700px){
+
+    .page1{
+        height: 100vh;
+    }
+
+    .about_me{
+        max-width: 40vw;
+        max-height: 40vw;
+    }
+
+    .star_about_me{
+    margin-top: 10vw;
+    }
+
+    .yellow_star{
+        left: 60vw;
+    }
+
+    .pink_star{
+        left: 27vw;
+    }
+
+    .prog{
+        margin-left: -23vw;
+    }
+
+    .programming{
+        margin-left: -10vw;
+    }
+
+    .text_block{
+        margin-top: 10vh;
+    }
+
+    .
+
+    .svyaz{
+        max-width: 60%;
+    }
+
+    .icon_call{
+        width: 8vw;
+    }
+
+    .contacts{
+        column-gap: 0px;
+    }
+}
+
+@media screen and (max-width: 1300px){
+
+    .page1{
+        height: 100vh;
+    }
+
+    .red {
+        max-width: 100%;
+    }
+
+    .prog {
+        max-width: 140%;
+    }
+
+    .yellow_star, .pink_star{
+        max-width: 40%;
+    }
+
+    .line_red{
+        max-width: 30vw;
+        height: 40vw;
+        margin-right: 3.5vw;
+    }
+
+    .icon{
+        max-width: 20vw;
+        max-height: 20vw;
+    }
+
+    .icons_left{
+        row-gap: 2.5vh;
+    }
+
+    .line_prog{
+        max-width: 30vw;
+        height: 35vw;
+        margin-right: 3.5vw;
+    }
+
+    .icons_right{
+        gap: 2.5vh;
+        padding: 3.5vh 0;
+    }
+
+    .pink_star{
+        left: 24vw;
+    }
+
+    .projects{
+        max-width: 40%;
+        max-height: 50%;
+    }
+
+    .icons{
+        max-width: 40%;
+        max-height: 50%;
+    }
+
+    .contacts{
+        display: block;
+    }
+
+    .txt{
+        font-size: 3.3em;
+    }
+
+    .images{
+        display:flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .face{
+        bottom: 200px;
+        left: -40vw;
+    }
+
+    
+    .star_call{
+        bottom: -10vw;
+        left: -27vw;
+    }
+  }
+
+  @media screen and (max-width: 1000px){
+
+    .page1{
+        height: 100vh;
+    }
+
+    .projects{
+        max-width: 36%;
+      
+    }
+
+    .txt{
+        font-size: 3em;
+    }
+
+    .disco{
+        max-width: 45%;
+    }
+
+    .face{
+        width: 10vw;
+        left: -35vw;
+        bottom: 15vw;
+    }
+
+    .star_about_me{
+        left: 35vw;
+    }
+
+    .name{
+        margin-bottom: 5vh;
+    }
+
+    .header{
+        gap: 3vw;
+        font-size: 1.4em;
+    }
+
+    .stars_dekstop_main{
+       top: 20%;
+    }
+
+    .name{
+    font-size: 3.5em;
+    }
+
+    .projects{
+        max-width: 32%;
+    }
+
+    .ink{
+        position: relative;
+       top: 15vw;
+    }
+
+    .iowa{
+        left: 15vw;
+    }
+
+    .me{
+        margin-top: 3vh;
+    }
+
+    .text_block{
+        margin-top: 0;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+
+    .star_about_me{
+        width: 110px;
+    }
+
+   .icons_left{
+    row-gap: 1.7vh;
+   }
+
+   .icons_right{
+    row-gap: 1.7vh;
+    padding-top: 25px;
+   }
+
+   .star_call{
+    max-width: 140px;
+   }
+}
+
+@media screen and (max-width: 700px){
+    .page1{
+        height: 100vh;
+    }
+    .me{
+        left: 295px;
+    }
+
+    .pink_star{
+        max-width: 60px;
+    }
+
+    .prog{
+        position: relative;
+        left: 6vw;
+    }
+
+    .icons_left{
+        padding: 0;
+        row-gap: 1.5vh;
+    }
+
+    .icons_right{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        row-gap: 1.6vh;
+    }
+
+    .poster{
+        position: relative;
+        top: -3vw;
+    }
+
+    .ink{
+        top: 9vw;
+    }
+
+    .skate{
+        top: 8px;
+        left: 5px;
+    }
+
+    .txt{
+        font-size: 2.3em;
+    }
+
+    .contacts_element{
+        row-gap: 50px;
+    }
+
+    .icons{
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .letters_main{
+        width: 500px;
+    }
+    .header{
+        font-size: 1.1em;
+    }
+
+    .vector_main{
+        margin-top: 430px;
+        max-width: 45%;
+    }
+
+    .stars_dekstop_main{
+        top: 300px;
+    }
+
+    .name{
+        font-size: 3.8em;
+        margin-bottom: 5vh;
+    }
+
+    .image-button{
+        max-width: 60%;
+    }
+
+    .me{
+        max-width: 150%;
+        max-height: 110%;
+        left: 200px;
+        margin: auto;
+        top: 55%;
+    }
+
+    .stars_dekstop_main{
+        width: 120%;
+    }
+    .star_about_me{
+        top: 5vw;
+        width: 70px;
+        left: 70vw;
+    }
+
+    .txt{
+        font-size: 1.5em;
+    }
+
+    .contacts_element{
+        row-gap: 40px;
+    }
+
+    .star_call{
+        width: 80px;
+    }
+
+    .text_block{
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        display: flex;
+        justify-content: center;
+
+    }
+ .page2, .page3, .page4, .page5{
+        padding-top: 5px ;
+        padding-bottom: 5px;
+    }
+
+    .page1{
+        padding-bottom: 5px;
+        padding-top: 50px;
+    }
+
+    .page1, .page2, .page3, .page4, .page5{
+        height: 100vh;
+    }
+
+    .hero{
+        align-items: normal;
+    }
+
+    .page2{
+        display: flex;
+        justify-content: ;
+    }
+
+    .darker{
+        font-size: 3.5em;
+    }
+
+    .about_me{
+        max-width: 60%;
+    }
+
+    .text_about_me2 {
+        font-size: 2em;
+    }
+
+    .vector_about_me{
+        top: 90%;
+    }
+
+}
